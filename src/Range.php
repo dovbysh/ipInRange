@@ -9,7 +9,17 @@ use dovbysh\Ip\Exception\NotIp4;
 
 class Range
 {
-
+    /**
+     * Реализуй функцию, которая проверяет входит ли IP в выбранный диапазон. Ответ ожидается в формате Boolean.
+     *
+     * Правильные варианты работы функции:
+     *   $result = isIpInRange('31.173.80.80', '31.173.80.0/21'); // true
+     *   $result = isIpInRange('31.173.79.255', '31.173.80.0/21'); // false
+     *
+     * @param string $ip
+     * @param string $IpRange
+     * @return bool
+     */
     public function isIpInRange(string $ip, string $IpRange): bool
     {
         $longIp = ip2long($ip);
