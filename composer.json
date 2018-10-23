@@ -1,0 +1,21 @@
+{
+    "name": "dovbysh/ip-in-range",
+    "description": "'Checks ip in range, don`t use it in production it`s a homework'",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Andrey Dovbyshko",
+            "email": "dovbysh@gmail.com"
+        }
+    ],
+    "autoload": {
+    "psr-4": {
+      "dovbysh\\Ip\\": "src",
+      "dovbysh\\IpTest\\": "test"
+    }
+   },
+  "require": {}
+}
